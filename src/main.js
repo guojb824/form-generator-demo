@@ -1,8 +1,23 @@
-import Vue from 'vue'
-import App from './App.vue'
+// import Vue from "vue";
 
-Vue.config.productionTip = false
+// import ElementUI from "element-ui";
+// import "element-ui/lib/theme-chalk/index.css";
 
-new Vue({
-  render: h => h(App),
-}).$mount('#app')
+import { SvgIcon } from "../form-generator/form-gen-component.umd";
+
+window.Vue.component(SvgIcon.name, SvgIcon);
+
+import App from "./App.vue";
+// window.ELEMENT = Element;
+
+// Vue.use(window.Element);
+// Vue.config.productionTip = false;
+
+// eslint-disable-next-line no-undef
+new window.Vue({
+  el: "#app",
+  data: function () {
+    return { visible: false };
+  },
+  render: (h) => h(App),
+});
