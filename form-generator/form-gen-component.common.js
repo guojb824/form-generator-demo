@@ -29729,6 +29729,7 @@ __webpack_require__.r(__webpack_exports__);
 // EXPORTS
 __webpack_require__.d(__webpack_exports__, "Home", function() { return /* reexport */ Home; });
 __webpack_require__.d(__webpack_exports__, "SvgIcon", function() { return /* reexport */ SvgIcon; });
+__webpack_require__.d(__webpack_exports__, "MyComponent", function() { return /* reexport */ MyComp; });
 
 // CONCATENATED MODULE: ./node_modules/@vue/cli-service/lib/commands/build/setPublicPath.js
 // This file is imported into lib/wc client bundles.
@@ -29753,6 +29754,9 @@ if (typeof window !== 'undefined') {
 
 // Indicate to webpack that this file can be concatenated
 /* harmony default export */ var setPublicPath = (null);
+
+// EXTERNAL MODULE: ./node_modules/core-js/modules/es.function.name.js
+var es_function_name = __webpack_require__("b0c0");
 
 // EXTERNAL MODULE: ./node_modules/core-js/modules/es.json.stringify.js
 var es_json_stringify = __webpack_require__("e9c4");
@@ -30113,9 +30117,6 @@ var es_array_find_index = __webpack_require__("c740");
 
 // EXTERNAL MODULE: ./node_modules/core-js/modules/es.array.find.js
 var es_array_find = __webpack_require__("7db0");
-
-// EXTERNAL MODULE: ./node_modules/core-js/modules/es.function.name.js
-var es_function_name = __webpack_require__("b0c0");
 
 // EXTERNAL MODULE: ./node_modules/core-js/modules/es.array.concat.js
 var es_array_concat = __webpack_require__("99af");
@@ -34312,6 +34313,25 @@ var inputComponents = [{
   height: 300,
   // 编辑器高度
   branding: false // 隐藏右下角品牌烙印
+}, {
+  __config__: {
+    label: '自定义组件',
+    showLabel: true,
+    changeTag: true,
+    labelWidth: null,
+    tag: 'MyComponent',
+    tagIcon: 'my-component',
+    defaultValue: null,
+    span: 24,
+    layout: 'colFormItem',
+    required: true,
+    regList: [],
+    document: 'http://tinymce.ax-z.cn'
+  },
+  placeholder: '请输入',
+  height: 300,
+  // 编辑器高度
+  branding: false // 隐藏右下角品牌烙印
 }];
 
 // 选择型组件 【左面板】
@@ -35994,6 +36014,66 @@ var SvgIcon_component = normalizeComponent(
 )
 
 /* harmony default export */ var SvgIcon = (SvgIcon_component.exports);
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"14424c84-vue-loader-template"}!./node_modules/cache-loader/dist/cjs.js??ref--12-0!./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib!./node_modules/vue-loader/lib/loaders/templateLoader.js??ref--6!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/MyComp.vue?vue&type=template&id=978a72e8&
+var MyCompvue_type_template_id_978a72e8_render = function render() {
+  var _vm = this,
+    _c = _vm._self._c;
+  return _c('div', [_c('el-table', {
+    staticStyle: {
+      "width": "100%"
+    },
+    attrs: {
+      "data": _vm.tableData
+    }
+  }, [_c('el-table-column', {
+    attrs: {
+      "prop": "date",
+      "label": "日期",
+      "width": "180"
+    }
+  }), _c('el-table-column', {
+    attrs: {
+      "prop": "name",
+      "label": "姓名",
+      "width": "180"
+    }
+  }), _c('el-table-column', {
+    attrs: {
+      "prop": "address",
+      "label": "地址"
+    }
+  })], 1)], 1);
+};
+var MyCompvue_type_template_id_978a72e8_staticRenderFns = [];
+
+// CONCATENATED MODULE: ./src/components/MyComp.vue?vue&type=template&id=978a72e8&
+
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js??ref--12-0!./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/MyComp.vue?vue&type=script&lang=js&
+/* harmony default export */ var MyCompvue_type_script_lang_js_ = ({
+  name: 'MyComponent'
+});
+// CONCATENATED MODULE: ./src/components/MyComp.vue?vue&type=script&lang=js&
+ /* harmony default export */ var components_MyCompvue_type_script_lang_js_ = (MyCompvue_type_script_lang_js_); 
+// CONCATENATED MODULE: ./src/components/MyComp.vue
+
+
+
+
+
+/* normalize component */
+
+var MyComp_component = normalizeComponent(
+  components_MyCompvue_type_script_lang_js_,
+  MyCompvue_type_template_id_978a72e8_render,
+  MyCompvue_type_template_id_978a72e8_staticRenderFns,
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* harmony default export */ var MyComp = (MyComp_component.exports);
 // EXTERNAL MODULE: ./src/styles/index.scss
 var src_styles = __webpack_require__("b20f");
 
@@ -36001,6 +36081,9 @@ var src_styles = __webpack_require__("b20f");
 
 
 
+
+
+window.Vue.component(MyComp.name, MyComp);
 window.Vue.use(SvgIcon);
 
 /* harmony default export */ var views_index = (Home);
